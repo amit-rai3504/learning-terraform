@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "github" {
-  token = "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"
+  token = "${GITHUB_TOKEN}"
 }
 
 resource "github_repository" "learning-terraform" {
